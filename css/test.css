@@ -1,0 +1,356 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1090px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 625px;
+    background-image: url(../images/pexels-brazil-topno-1004597.jpg);
+}
+
+
+.parent {
+    background-color: transparent;
+    width: 365px;
+    height: 375px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+.feat {
+    position: relative;
+}
+
+.feat i {
+    position: absolute;
+    top: -110px;
+    font-size: 40px;
+    left: 146px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.child {
+    position: relative;
+}
+
+.parent .child {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+.child label {
+    position: relative;
+}
+
+.parent .child label {
+    position: absolute;
+    top: -23px;
+}
+
+.child input {
+    width: 100%;
+    border: 0 solid transparent;
+    outline: 0 solid transparent;
+    background-color: transparent;
+}
+
+.child hr {
+    width: 350px;
+}
+
+.child_one {
+    position: relative;
+}
+
+.child_one input {
+    width: 100%;
+    border: 0 solid transparent;
+    outline: 0 solid transparent;
+    background-color: transparent;
+}
+
+.child_one hr {
+    width: 350px;
+}
+
+.parent .child_one {
+    position: absolute;
+    left: 10px;
+    top: 105px;
+}
+
+.child_one label {
+    position: relative;
+}
+
+.parent .child_one label {
+    position: absolute;
+    top: -23px;
+}
+
+.button {
+    position: relative;
+}
+
+.button button {
+    position: absolute;
+    top: 75px;
+    width: 250px;
+    background-color: white;
+    border: 0 solid transparent;
+    padding: 10px;
+    left: 65px;
+}
+
+.button hr {
+    position: absolute;
+    top: 135px;
+    left: 0px;
+    width: 360px;
+    border: none;
+    border-top: 1px double #aaa;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.button hr:after {
+    background: #fff;
+    content: 'OR';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    background-color: transparent;
+}
+
+.media {
+    position: relative;
+}
+
+.media .one {
+    position: absolute;
+    background-color: blue;
+    border: 0 solid transparent;
+    color: white;
+    width: 160px;
+    padding: 7px;
+    top: 165px;
+    left: 14px;
+    text-align: center;
+}
+
+.media .two {
+    position: absolute;
+    width: 160px;
+    padding: 7px;
+    top: 165px;
+    right: 12px;
+    text-align: center;
+    background-color: red;
+    border: 0 solid transparent;
+    color: white;
+}
+
+.links {
+    position: relative;
+}
+
+.links p {
+    position: absolute;
+    top: 200px;
+    left: 55px;
+}
+
+.links a {
+    position: absolute;
+    top: 215px;
+    left: 240px;
+}
+
+@media only screen and (max-width:350px) {
+    body {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        max-width: 310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parent {
+        max-width: 267px;
+    }
+
+    .parent .child {
+        position: absolute;
+        left: 2px;
+        top: 50px;
+    }
+
+    .child hr {
+        width: 260px;
+    }
+
+    .parent .child_one {
+        position: absolute;
+        left: 2px;
+        top: 108px;
+    }
+
+    .child_one hr {
+        width: 260px;
+    }
+
+    .button hr {
+        width: 286px;
+    }
+
+    .button button {
+        left: 40px;
+        width: 190px;
+    }
+
+    .media .one {
+        position: absolute;
+        width: 118px;
+        top: 165px;
+        left: 10px;
+    }
+
+    .media .two {
+        position: absolute;
+        width: 118px;
+        top: 165px;
+        right: 10px
+    }
+
+    .links p {
+        position: absolute;
+        top: 220px;
+        left: 5px;
+    }
+
+    .links a {
+        position: absolute;
+        top: 220px;
+        left: 174px
+    }
+
+    .feat i {
+        position: absolute;
+        top: -125px;
+        left: 110px;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px !important;
+    }
+
+    .feat i {
+        position: absolute;
+        top: -130px;
+        left: 155px;
+    }
+
+    .links p {
+        position: absolute;
+        left: 5px;
+        top: 206px;
+    }
+
+    .links a {
+        position: absolute;
+        left: 237px;
+        top: 225px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 1118px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 680px !important;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    body {
+        width: 100%;
+        height: 1350px;
+        background-size: cover;
+        max-width: 1170px;
+        font-size: 16px;
+    }
+
+    .feat i {
+        position: absolute;
+        top: -130px;
+        left: 155px;
+    }
+
+    .links p {
+        position: absolute;
+        left: 5px;
+        top: 206px;
+    }
+
+    .links a {
+        position: absolute;
+        left: 237px;
+        top: 225px;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    body {
+        width: 100%;
+        height: 1880px;
+        background-size: cover;
+        max-width: 1280px;
+        font-size: 20px;
+    }
+
+    .feat i {
+        position: absolute;
+        top: -130px;
+        left: 155px;
+    }
+
+    .links p {
+        position: absolute;
+        left: 5px;
+        top: 206px;
+    }
+
+    .links a {
+        position: absolute;
+        left: 237px;
+        top: 225px;
+    }
+}
